@@ -1,3 +1,3 @@
 const CONFIG = {
-  API_URL: "https://sua-api.onrender.com",
+  API_URL: "https://grapper-server.onrender.com",
 };
